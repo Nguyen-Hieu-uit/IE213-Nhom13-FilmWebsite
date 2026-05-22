@@ -19,17 +19,6 @@ const connectDB = async () => {
     process.exit(1); // Exit the application with an error code
   }
 };
-const connectDBWithMongoClient = async () => {
-  try {
-    const client = new MongoClient(process.env.MONGODB_URI);
-    await client.connect();
-    console.log("Connected to the database successfully");
-    return client;
-  } catch (error) {
-    console.error("Failed to connect to the database:", error);
-    process.exit(1); // Exit the application with an error code
-  }
-};
 
 const PORT = process.env.PORT || 3000;
 

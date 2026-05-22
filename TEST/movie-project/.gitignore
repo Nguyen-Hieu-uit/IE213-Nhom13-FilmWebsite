@@ -33,6 +33,7 @@ __pycache__/
 .idea/
 *.db
 
+
 # Large data / generated files
 movies_metadata.json
 movies_checkpoints.jsonl
